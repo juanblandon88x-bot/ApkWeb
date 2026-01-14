@@ -2,7 +2,7 @@
  * API para conectar con el panel SIRNET
  */
 
-const API_BASE = 'http://sirnetpruebas.byethost7.com';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://sirnetpruebas.byethost7.com';
 
 export interface ProfileInfo {
   id: number;
